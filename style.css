@@ -348,4 +348,44 @@ font-weight: 500;
     color: #C8C8C8AB;
     font-size: 17px;
 }
+
+
+.button-nonton{
+        
+background-color: transparent;
+
+
+
+  border: 0px solid transparent; /* Atur warna dan ukuran garis sesuai kebutuhan */
+  color: transparent; /* Atur warna teks sesuai kebutuhan */
+  padding: 0px 0px; /* Atur ukuran padding sesuai kebutuhan */
+  text-align: left;
+  margin-top: 80px;
+  border-radius: 5px; /* Atur radius border sesuai kebutuhan */
+  width:90%;
+
+  display: flex;
+  gap: 10px;
+  height: 60px;
+  
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  background: #0094FF;
+  color: #FFFFFF;
+  
+}
+.button-nonton span{
+        font-family: 'Zen Maru Gothic';
+
+        font-size: 25px;
+
+        font-weight: 800;
+}
+.batas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 30px;
+}
 }
