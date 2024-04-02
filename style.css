@@ -1,0 +1,183 @@
+* {
+
+
+
+  margin: 0;
+
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+body,
+
+html {
+
+  background: #040C14;
+}
+
+@media (max-width: 810px){
+
+.header{
+        margin-top: 30px;
+        margin-left: 25px;
+        display: flex;
+}
+.headerbox{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+}
+.headerbox span{
+        color: #DFDFDFEB;
+        font-family: 'Zen Maru Gothic';
+        font-size: 25px;
+}
+.headerbox p{
+        font-size: 20px;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-family: 'Barlow Condensed';
+}
+
+.search-box {
+    position: relative;
+    width: 340px; /* Menambahkan panjang kotak pencarian */
+display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #6161615E; /* Mengubah warna kotak pencarian menjadi abu-abu */
+    border-radius: 10px; /* Menambahkan border radius */
+}
+
+.search-input {
+    width: 100%;
+    
+    outline: none;
+    height: 100px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    border: none; /* Menghapus border default */
+    background: none; /* Menghapus background default */
+    color: #FFFFFF; 
+    caret-color:#FFFFFF; /* Mengubah warna teks menjadi putih */
+}
+.search-input::placeholder{
+        color: #FFFFFF;
+        font-size: 17px;
+        font-family: 'Zen Maru Gothic';
+}
+.mdi.mdi-magnify {
+    position: absolute;
+    left: 10px; /* Mengubah posisi ikon ke sebelah kiri */
+    top: 50%;
+    font-size: 40px;
+    transform: translateY(-50%);
+    color: white; /* Mengubah warna ikon menjadi putih */
+}
+.search-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+}
+.movie{
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+}
+.movie h3{
+        margin-top: 30px;
+        font-size: 40px;
+        font-family: 'Zen Maru Gothic';
+}
+.tag-container{
+        display: flex;
+        gap: 10px;
+        margin-top: 6px;
+}
+.button{
+        margin: auto;
+
+  width:auto;
+
+  display: flex;
+  flex-direction: column;
+  border: none;
+  height: 50px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #60606052;
+  color: #FFFFFF;
+  margin-right: 0px;
+  padding: 0 20px;
+
+  margin-left: 0px; 
+  
+}
+.button h1{
+        font-family: 'Zen Maru Gothic';
+        font-weight: 400;
+}
+.container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 25px;
+        display: none;
+}
+.box-now{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 160px;
+        height: 290px;
+}
+.box-now img{
+        object-fit: cover;
+        width: 160px;
+        height: 250px;
+        box-shadow:  0 0 5px  #FFFFFF6E;
+        border-radius: 10px;
+}
+.box-now span{
+        color: #FFFFFF82;
+        
+}
+.box-now h1{
+        font-family: 'Zen Maru Gothic';
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+}
+.button.active {
+  background-color:#3799FFF0 ;
+  color: white;
+}
+.container.active {
+  
+  display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 25px;
+}
+}

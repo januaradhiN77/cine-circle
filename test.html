@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Zen Maru Gothic' rel='stylesheet'>
+   <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css">
+  <title>CineCircle</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+ 
+</head>
+
+
+</body>
+<button class="button active" onclick="showSection('semua')">Semua</button>
+<button class="button" onclick="showSection('populer')">Populer</button>
+<button class="button" onclick="showSection('soon')">Soon</button>
+
+<section id="semua" class="section active">Ini adalah section Semua</section>
+<section id="populer" class="section">Ini adalah section Populer</section>
+<section id="soon" class="section">Ini adalah section Soon</section>
+<style>
+
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button.active {
+  background-color: blue;
+  color: white;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+ </style>
+
+<script>
+function showSection(sectionId) {
+  var buttons = document.querySelectorAll(".button");
+  buttons.forEach(function(button) {
+    button.style.backgroundColor = "white";
+    button.style.color = "black";
+  });
+
+  var selectedButton = document.querySelector("button[data-section='" + sectionId + "']");
+  selectedButton.style.backgroundColor = "blue";
+  selectedButton.style.color = "white";
+
+  var sections = document.querySelectorAll(".section");
+  sections.forEach(function(section) {
+    section.style.display = "none";
+  });
+  var selectedSection = document.getElementById(sectionId);
+  selectedSection.style.display = "block";
+}
+</script>
+</html>
+</body>

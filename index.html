@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Zen Maru Gothic' rel='stylesheet'>
+   <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css">
+  <title>CineCircle</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="header">
+        <div class="headerbox">
+                <span>Welcome To</span>
+                <p>CineCircle!</p>
+        </div>
+</section>
+<section class="search-container">
+<div class="search-box">
+         <i class="mdi mdi-magnify search-icon"></i>
+   <input type="text" class="search-input" placeholder="Cari Film...">
+
+</div>
+</section>
+                    
+<section class="movie">
+        <h3 style="color: white;">Film</h3>
+        <div class="tag-container">
+                <button class="button active" data-id="semua" onclick="tampilkanSection('semua')">
+                        <h1>Semua</h1>
+                </button>
+                <button class="button" data-id="populer" onclick="tampilkanSection('populer')">
+                        <h1>Populer</h1>
+                </button>
+                <button class="button" data-id="soon" onclick="tampilkanSection('soon')">
+<h1>Soon</h1>
+                                </button>
+                
+                
+        </div>
+</section>
+<section class="container active" id="semua">
+        <div class="box-now">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsg3sBvEDTuEnUTkR_iPLu5aASeeXie5h56vsudOJWdDShrI7FgDKUjxEz&s=10">
+                <h1>Agak Laen</h1>
+ <span>DD/MM/YY • Genre</span>
+        </div>
+                <div class="box-now">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9DizFW7euzMoW2irKbRIm35vK435Gv0gmQmRjB4VWIw&s">
+                <h1>Mariposa</h1>
+                <span>DD/MM/YY • Genre</span>
+        </div>
+        <div class="box-now">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR39457xLBHVwO_lYa5gu9y72TD9oKREePd4N0UeDBp5g&s">
+                <h1>Pemandi Jenazah</h1>
+                <span>DD/MM/YY • Genre</span>
+        </div>
+        <div class="box-now">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWegQ24gM5MIKEWTnAMpYUrhwIqn8jLk6fphpYftSfa8lldmBqBxmPRcdT&s=10">
+                <h1>Ronggeng Kematian</h1>
+                <span>DD/MM/YY • Genre</span>
+        </div>
+        <div class="box-now">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkPM8QvloENhQMewYPt4gUhQI51vxfQA-LRGv4EeAIE1WiFSEth4AAZGPt&s=10">
+                        <h1>KKN di Desa Penari</h1>
+                        <span>DD/MM/YY • Genre</span>
+                </div>
+                <div class="box-now">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsg3sBvEDTuEnUTkR_iPLu5aASeeXie5h56vsudOJWdDShrI7FgDKUjxEz&s=10">
+                        <h1>Agak Laen</h1>
+                        <span>1 April 2024</span>
+                </div>
+        <div class="box-now">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsg3sBvEDTuEnUTkR_iPLu5aASeeXie5h56vsudOJWdDShrI7FgDKUjxEz&s=10">
+                        <h1>Agak Laen</h1>
+                        <span>1 April 2024</span>
+                </div>
+                <div class="box-now">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsg3sBvEDTuEnUTkR_iPLu5aASeeXie5h56vsudOJWdDShrI7FgDKUjxEz&s=10">
+                        <h1>Agak Laen</h1>
+                        <span>1 April 2024</span>
+                </div>
+        
+        
+        
+        
+        
+        
+        
+</section>
+
+
+<section class="container" id="populer">
+
+        <div class="box-now">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkPM8QvloENhQMewYPt4gUhQI51vxfQA-LRGv4EeAIE1WiFSEth4AAZGPt&s=10">
+                        <h1>KKN di Desa Penari</h1>
+                        <span>DD/MM/YY • Genre</span>
+                </div>
+                <div class="box-now">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsg3sBvEDTuEnUTkR_iPLu5aASeeXie5h56vsudOJWdDShrI7FgDKUjxEz&s=10">
+                        <h1>Agak Laen</h1>
+                        <span>1 April 2024</span>
+                </div>
+        <div class="box-now">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsg3sBvEDTuEnUTkR_iPLu5aASeeXie5h56vsudOJWdDShrI7FgDKUjxEz&s=10">
+                        <h1>Agak Laen</h1>
+                        <span>1 April 2024</span>
+                </div>
+                <div class="box-now">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsg3sBvEDTuEnUTkR_iPLu5aASeeXie5h56vsudOJWdDShrI7FgDKUjxEz&s=10">
+                        <h1>Agak Laen</h1>
+                        <span>1 April 2024</span>
+                </div>
+        
+        
+        
+        
+        
+        
+        
+</section>
+<section class="container" id="soon">
+
+        <div class="box-now">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkPM8QvloENhQMewYPt4gUhQI51vxfQA-LRGv4EeAIE1WiFSEth4AAZGPt&s=10">
+                        <h1>KKN di Desa Penari</h1>
+                        <span>DD/MM/YY • Genre</span>
+                </div>
+                <div class="box-now">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsg3sBvEDTuEnUTkR_iPLu5aASeeXie5h56vsudOJWdDShrI7FgDKUjxEz&s=10">
+                        <h1>Agak Laen</h1>
+                        <span>1 April 2024</span>
+                </div>
+        <div class="box-now">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsg3sBvEDTuEnUTkR_iPLu5aASeeXie5h56vsudOJWdDShrI7FgDKUjxEz&s=10">
+                        <h1>Agak Laen</h1>
+                        <span>1 April 2024</span>
+                </div>
+                <div class="box-now">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsg3sBvEDTuEnUTkR_iPLu5aASeeXie5h56vsudOJWdDShrI7FgDKUjxEz&s=10">
+                        <h1>Agak Laen</h1>
+                        <span>1 April 2024</span>
+                </div>
+        
+        
+        
+        
+        
+        
+        
+</section>
+
+  <script src="main.js"></script>
+</body>
+</html>
